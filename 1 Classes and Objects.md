@@ -1,9 +1,13 @@
+## Classes and Object
+
+### Definition:
+
 >[!important]
->### Definition:
-> **Class**:
+> ####Class:
 >A class is a blueprint or template for creating objects. It defines the attributes (properties) and behaviors (methods) that objects of that class will have. Classes are static entities and do not exist in memory during program execution.
->
-> **Object**:
+
+>[!important]
+> #### Object:
 >An object is an instance of a class. It represents a specific entity in a program and possesses its own unique state (values for its attributes) and behavior (functions/methods). Objects are dynamic entities and exist in memory during program execution.
 
 ---
