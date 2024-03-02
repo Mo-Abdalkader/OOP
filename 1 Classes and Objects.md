@@ -3,7 +3,7 @@
 ### Definition:
 
 >[!important]
-> ####Class:
+> #### Class:
 >A class is a blueprint or template for creating objects. It defines the attributes (properties) and behaviors (methods) that objects of that class will have. Classes are static entities and do not exist in memory during program execution.
 
 >[!important]
