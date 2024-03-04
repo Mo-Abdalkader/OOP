@@ -39,3 +39,6 @@ public class Car {
     // Other methods...
 }
 ```
+
+**Explination:**
+In this updated `Car` class, the properties `make`, `model`, and `year` are encapsulated using private access modifiers, meaning they can only be accessed or modified within the `Car` class itself. Public getter and setter methods (`getMake()`, `setMake()`, etc.) are provided to allow controlled access to these properties from outside the class. This encapsulation ensures that the internal state of a `Car` object remains protected and can only be modified through predefined methods, maintaining data integrity and security.
