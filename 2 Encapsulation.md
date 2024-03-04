@@ -80,4 +80,11 @@ public class Person {
 }
 ```
 
+**Explination:**
+By encapsulating the age attribute and providing getter and setter methods, you gain the following benefits:
+
+Validation: The setAge() method can enforce validation rules, such as ensuring that the age value falls within a valid range (e.g., between 0 and 120). This prevents invalid data from being set and maintains data integrity.
+Flexibility: You can add additional logic or side effects to the setter method, such as logging, triggering events, or updating related attributes, without modifying external code that uses the class.
+Control: By controlling access to the age attribute through getter and setter methods, you can maintain control over how the attribute is read and modified, allowing you to enforce business rules or constraints as needed.
+Overall, encapsulation promotes better code organization, maintainability, and flexibility by hiding implementation details and providing controlled access to an object's data.
 
