@@ -17,6 +17,81 @@
 - **Promotes Modularity**: Classes can be organized hierarchically, promoting a modular design that is easier to understand and maintain.
 - **Polymorphism**: Inheritance enables polymorphic behavior, where objects of different classes can be treated uniformly.
 
+### Example:
+Consider a scenario where we have a Vehicle class representing common attributes and behaviors of all vehicles. We can then create a Car class and a Bicycle class that inherit from the Vehicle class, inheriting its properties and behaviors while adding their own specific characteristics.
+
+**Cdoe:**
+```java
+// Parent class
+public class Vehicle {
+    // Properties
+    protected String manufacturer;
+    protected int year;
+
+    // Constructor
+    public Vehicle(String manufacturer, int year) {
+        this.manufacturer = manufacturer;
+        this.year = year;
+    }
+
+    // Method
+    public void drive() {
+        System.out.println("The vehicle is being driven.");
+    }
+}
+
+// Subclass 1
+public class Car extends Vehicle {
+    // Additional properties specific to Car
+    private int numOfDoors;
+
+    // Constructor
+    public Car(String manufacturer, int year, int numOfDoors) {
+        super(manufacturer, year); // Call superclass constructor
+        this.numOfDoors = numOfDoors;
+    }
+
+    // Additional method specific to Car
+    public void honk() {
+        System.out.println("Beep! Beep!");
+    }
+}
+
+// Subclass 2
+public class Bicycle extends Vehicle {
+    // Additional properties specific to Bicycle
+    private int numOfGears;
+
+    // Constructor
+    public Bicycle(String manufacturer, int year, int numOfGears) {
+        super(manufacturer, year); // Call superclass constructor
+        this.numOfGears = numOfGears;
+    }
+
+    // Additional method specific to Bicycle
+    public void ringBell() {
+        System.out.println("Ring! Ring!");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", 2020, 4);
+        Bicycle myBicycle = new Bicycle("Giant", 2019, 18);
+
+        myCar.drive(); // Output: The vehicle is being driven.
+        myCar.honk();  // Output: Beep! Beep!
+
+        myBicycle.drive();  // Output: The vehicle is being driven.
+        myBicycle.ringBell(); // Output: Ring! Ring!
+    }
+}
+```
+**Explination:**
+In this example, the Vehicle class serves as the superclass, defining common properties and behaviors shared by all vehicles. The Car and Bicycle classes inherit from Vehicle, gaining access to its properties and methods. They also add their own specific properties and methods (numOfDoors, honk() for Car; numOfGears, ringBell() for Bicycle). This demonstrates how inheritance promotes code reuse and helps in organizing and extending the functionality of classes in Java.
+
+
 ### Use of `super` Keyword:
 
 - **Accessing Parent Class Members**: In many programming languages, the `super` keyword is used to access members (methods or properties) of the parent class from within the subclass.
