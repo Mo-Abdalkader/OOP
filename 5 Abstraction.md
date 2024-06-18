@@ -1,5 +1,7 @@
 ### Abstraction
+
 **Abstraction:** simplifies complex systems by modeling classes appropriate to the problem, focusing on relevant attributes and behaviors while hiding unnecessary details. It allows for defining interfaces and abstract classes that specify a contract for what derived classes should implement, promoting a clear separation of what an object does from how it does it.
+
 ---
 ### Example:
 Consider a scenario where we have an abstract class Animal with an abstract method sound(), and two concrete subclasses Dog and Cat which provide their own specific implementation of the sound() method.
