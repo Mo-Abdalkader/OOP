@@ -49,7 +49,7 @@ In this example, we have a Shape superclass with a method draw(). The Circle and
 
 In the Main class, we create objects of type Shape, but they actually refer to instances of Circle and Rectangle respectively. When calling the draw() method on these objects, the overridden version of the draw() method in each subclass is invoked, demonstrating polymorphism. Despite referring to objects of different types, the draw() method behaves differently based on the actual type of the object at runtime.
 
-| Feature                               | Shape shape1 = new Circle();                        | Circle shape1 = new Circle();                       |
+| Feature                               | Shape shape = new Circle();                        | Circle circle = new Circle();                       |
 |---------------------------------------|------------------------------------------------------|-----------------------------------------------------|
 | Reference Type                        | Reference variable is of type Shape.                 | Reference variable is of type Circle.               |
 | Polymorphism                          | Allows for polymorphism, treating Circle as Shape.    | Does not allow polymorphism.                        |
