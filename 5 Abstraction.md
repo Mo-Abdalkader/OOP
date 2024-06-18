@@ -58,19 +58,37 @@ In the Main class, we create objects of type Animal, but they actually refer to 
 
 ### Pros and Cons
 
-| Pros                                  | Cons                                    |
-|---------------------------------------|-----------------------------------------|
-| **Simplifies Complexity**             | **Performance Overhead**                |
-| By focusing on high-level concepts and hiding low-level details, abstraction helps in managing complex systems more effectively. | The use of abstract classes and interfaces can introduce additional layers of abstraction, which might lead to a performance overhead. |
+**Pros:**
 
-| **Improves Code Readability**         | **Increased Complexity**                |
-| Using abstract classes and interfaces makes the code more readable and understandable by emphasizing the essential features of an object. | While abstraction simplifies the interface, it can sometimes make the underlying implementation more complex, especially if overused or poorly designed. |
+1. **Simplifies Complexity:**
+   - By focusing on high-level concepts and hiding low-level details, abstraction helps in managing complex systems more effectively.
 
-| **Enhances Maintainability**          | **Learning Curve**                      |
-| Abstracting common behaviors into base classes allows changes to be made in one place, reducing the need for extensive modifications across the codebase. | Understanding and effectively implementing abstraction requires a good grasp of OOP principles, which can be challenging for beginners. |
+2. **Improves Code Readability:**
+   - Using abstract classes and interfaces makes the code more readable and understandable by emphasizing the essential features of an object.
 
-| **Promotes Reusability**              | **Potential for Misuse**                |
-| Abstraction facilitates code reuse by defining common interfaces and abstract classes that can be extended by various implementations. | Incorrect use of abstraction can lead to poorly designed systems where the abstraction does not correctly model the problem domain, resulting in maintenance difficulties. |
+3. **Enhances Maintainability:**
+   - Abstracting common behaviors into base classes allows changes to be made in one place, reducing the need for extensive modifications across the codebase.
 
-| **Encourages Encapsulation**          | **Reduced Flexibility**                 |
-| By hiding implementation details, abstraction ensures that the inner workings of objects are protected from outside interference and misuse. | Over-abstraction can sometimes lead to rigid structures that are hard to adapt to new requirements, as changes in the abstraction layer can affect all derived classes. |
+4. **Promotes Reusability:**
+   - Abstraction facilitates code reuse by defining common interfaces and abstract classes that can be extended by various implementations.
+
+5. **Encourages Encapsulation:**
+   - By hiding implementation details, abstraction ensures that the inner workings of objects are protected from outside interference and misuse.
+
+**Cons:**
+
+1. **Performance Overhead:**
+   - The use of abstract classes and interfaces can introduce additional layers of abstraction, which might lead to a performance overhead.
+
+2. **Increased Complexity:**
+   - While abstraction simplifies the interface, it can sometimes make the underlying implementation more complex, especially if overused or poorly designed.
+
+3. **Learning Curve:**
+   - Understanding and effectively implementing abstraction requires a good grasp of OOP principles, which can be challenging for beginners.
+
+4. **Potential for Misuse:**
+   - Incorrect use of abstraction can lead to poorly designed systems where the abstraction does not correctly model the problem domain, resulting in maintenance difficulties.
+
+5. **Reduced Flexibility:**
+   - Over-abstraction can sometimes lead to rigid structures that are hard to adapt to new requirements, as changes in the abstraction layer can affect all derived classes.
+
